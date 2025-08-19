@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Developer portfolio homepage.">
+    <meta name="keywords" content="Frontend Developer, Portfolio, HTML, Projects">
+    <meta name="author" content="Your Name">
+    <title>Home | Frontend Developer</title>
+    <style>
+        :root {
+            --primary: #1976d2;
+            --secondary: #e3f2fd;
+            --accent: #1565c0;
+            --text: #222;
+            --bg: #f9f9f9;
+            --radius: 12px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            color: #fff;
+            padding: 2em 1em 1em 1em;
+            text-align: center;
+            border-radius: 0 0 var(--radius) var(--radius);
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin-bottom: 0.5em;
+        }
+        nav {
+            margin-top: 0.5em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #ffd600;
+        }
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 2em auto;
+            background: #fff;
+            border-radius: var(--radius);
+            box-shadow: 0 2px 16px rgba(25, 118, 210, 0.08);
+            padding: 2em;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        h3 {
+            color: var(--accent);
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-size: 1.3em;
+        }
+        h4 {
+            color: var(--primary);
+            margin-bottom: 0.2em;
+            font-size: 1.1em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        article {
+            background: var(--secondary);
+            border-radius: var(--radius);
+            padding: 1em 1.5em;
+            margin-bottom: 1em;
+            box-shadow: 0 1px 4px rgba(25, 118, 210, 0.05);
+        }
+        article a {
+            display: inline-block;
+            margin-top: 0.5em;
+            color: var(--primary);
+            text-decoration: underline;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        article a:hover {
+            color: #ffd600;
+        }
+        ul {
+            margin-left: 1.5em;
+            margin-top: 0.5em;
+        }
+        li {
+            margin-bottom: 0.3em;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: var(--secondary);
+            color: var(--primary);
+            border-radius: var(--radius) var(--radius) 0 0;
+            font-size: 1em;
+            margin-top: auto;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 1em;
+                margin: 1em;
+            }
+            header {
+                padding: 1.5em 0.5em 0.7em 0.5em;
+            }
+            nav a {
+                margin: 0 0.5em;
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>B-Frankie</h1>
+        <nav>
+            <a href="Homepage.html">Home</a> /
+            <a href="projects.html">Projects</a> /
+            <a href="articles.html">Articles</a> /
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Frontend Developer</h2>
+        <p>HTML only with proper layout, no styling.</p>
+
+        <section>
+            <h3>Work Experience</h3>
+            <article>
+                <h4>roadmap.sh</h4>
+                <p>Solved all the frontend projects.</p>
+                <a href="#">Visit my Profile</a>
+            </article>
+            <article>
+                <h4>Open Source Work</h4>
+                <p>Contributed to 50 open source projects and created projects with 200 GitHub stars.</p>
+                <a href="#">Visit my GitHub Profile</a>
+            </article>
+        </section>
+
+        <section>
+            <h3>Education</h3>
+            <p>Graduated with 3.76 GPA. Won Acme Hackathon. Organized 30 sessions.</p>
+            <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discrete Mathematics</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; All rights reserved 2025</p>
+    </footer>
+</body>
+</html>
